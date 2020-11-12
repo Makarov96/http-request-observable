@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    padding-left: 100px;
+    padding-top: 5%;
+    align-items: stretch;
+}
+
+.mat-card:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.mat-button {
+    background-color: #263238;
+    color: white;
+}

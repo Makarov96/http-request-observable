@@ -1,0 +1,24 @@
+<main class="grid">
+    <div *ngFor="let notify of notifys">
+        <mat-card>
+            <mat-card-content>
+                <div flex layout="row" layout-align="center center">
+                    <div class="leftborder">&nbsp;&nbsp;&nbsp;</div>
+                    <div><i class="zmdi  imageIcon zmdi-flower zmdi-hc-2x"></i></div>
+                    <span flex="5"> </span>
+                    <div>Descripcion: {{notify.mensaje}}<br></div>
+                    <span flex> </span>
+                    <div>
+                        <a href="#"><i class="zmdi imageIcon zmdi-delete zmdi-hc-2x"></i></a>
+                    </div>
+                    <span flex="5"> </span>
+                    <div><a href="#"><i class="zmdi imageIcon zmdi-edit zmdi-hc-2x"></i></a></div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="deleteN(user)">Ok</button>
+
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</main>

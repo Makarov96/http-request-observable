@@ -1,0 +1,20 @@
+.mat-sidenav-two {
+    position: fixed;
+}
+
+.mat-toolbar-two {
+    background-color: #263238;
+    color: white;
+}
+
+.mat-list-item-two {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.mat-icon-two {
+    font-size: 33px;
+    text-align: center;
+    margin: 2px;
+}

@@ -1,0 +1,33 @@
+<div class="container">
+
+    <mat-card>
+        <mat-card-title>Ingresa un nuevo trabajo
+        </mat-card-title>
+
+        <mat-card-content>
+            <div class="center">
+                <form class="example-form" [formGroup]="formGroup">
+
+                    <mat-form-field class="example-full-width">
+                        <input type="text" formControlName="direccion" matInput placeholder="Ingresa tu direccion" required>
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <input type="text" formControlName="precio" matInput placeholder="Ingresa el coste del trabajo" required>
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Ingresa las caracteristicas del trabajo</mat-label>
+                        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" formControlName="descripcion" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+                    </mat-form-field>
+
+                    <button type="button" [disabled]="formGroup.invalid" class="ingresar" name="submit" (click)="enviar()" mat-button mat-raised-button>Enviar</button>
+
+                </form>
+            </div>
+        </mat-card-content>
+
+    </mat-card>
+
+
+</div>

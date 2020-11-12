@@ -1,0 +1,13 @@
+.mat-toolbar {
+    text-align: center;
+    margin: auto;
+    background-color: #263238;
+    color: white;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+}

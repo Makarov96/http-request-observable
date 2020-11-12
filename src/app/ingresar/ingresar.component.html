@@ -1,0 +1,26 @@
+<div class="container">
+     <app-bar></app-bar>
+    <div class="container dos">
+        <mat-card>
+            <mat-card-title>Inicia Sesion</mat-card-title>
+
+            <mat-card-content>
+                <div class="center">
+                    <form class="example-form" [formGroup]="formGroup">
+
+                        <mat-form-field class="example-full-width">
+                            <input type="email" formControlName="correo" matInput placeholder="Ingresa tu correo" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input type="password" formControlName="contra" matInput placeholder="Ingresa tu contrase&ntilde;a" required>
+                        </mat-form-field>
+                        <button type="button" [disabled]="formGroup.invalid" class="ingresar" name="submit" (click)="enviar()" mat-button mat-raised-button>Enviar</button>
+                    </form>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+
+</div>

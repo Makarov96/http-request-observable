@@ -1,0 +1,21 @@
+.mat-sidenav {
+    position: fixed;
+}
+
+.mat-list-item {
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+.mat-toolbar {
+    background-color: #263238;
+    color: white;
+}
+
+.mat-icon {
+    font-size: 33px;
+    text-align: center;
+    margin: 2px;
+}

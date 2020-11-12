@@ -1,0 +1,66 @@
+<div class="container">
+     <app-bar></app-bar>
+    <div class="container dos">
+        <mat-card>
+            <mat-card-title>Registrate</mat-card-title>
+
+            <mat-card-content>
+                <div class="center">
+                    <form class="example-form" [formGroup]="formGroup">
+                        <mat-form-field class="example-full-width">
+                            <input type="text" matInput formControlName="nombre" placeholder="Ingresa tu primer nombre" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input type="text" matInput formControlName="nombredos" placeholder="Ingresa tu segundo nombre" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input type="text" formControlName="apellido" matInput placeholder="Ingresa tu primer apellido" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input type="text" formControlName="apellidodos" matInput placeholder="Ingresa tu segundo apellido" required>
+                        </mat-form-field>
+                        
+                        <mat-form-field class="example-full-width">
+                            <input type="email" formControlName="correo" matInput placeholder="Ingresa tu correo" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input type="text" formControlName="celular" matInput placeholder="Ingresa tu numero de celular" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input type="text" formControlName="dpi" matInput placeholder="Ingresa tu dpi" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input type="text" formControlName="nit" matInput placeholder="Ingresa tu nit" required>
+                        </mat-form-field>
+
+
+
+                        <mat-form-field class="example-full-width">
+                            <input type="password" formControlName="contra" matInput placeholder="Ingresa tu contrase&ntilde;a" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Seleccione un tipo de usuario</mat-label>
+                            <mat-select formControlName="usuario" required>
+                                <mat-option *ngFor="let usuarios of tipousuario" [value]="usuarios">
+                                    {{usuarios}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <button type="button" [disabled]="formGroup.invalid" class="ingresar" name="submit" (click)="enviar()" mat-button mat-raised-button>Enviar</button>
+                    </form>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+
+
+</div>

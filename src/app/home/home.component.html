@@ -1,0 +1,22 @@
+<div>
+    <app-bar></app-bar>
+
+
+    <ng-container *ngIf="resolucion_pantalla; then thenTemplate; else elseTemplate"></ng-container>
+    <ng-template #thenTemplate>
+        <section>
+            <div class="container">
+                <app-pequena></app-pequena>
+            </div>
+        </section>
+    </ng-template>
+    <ng-template #elseTemplate>
+
+        <section>
+            <div class="container">
+                <div class="image"></div>
+            </div>
+        </section>
+    </ng-template>
+
+</div>

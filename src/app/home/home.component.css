@@ -1,0 +1,24 @@
+.container {
+    padding-top: 26px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Noto Serif', serif;
+    max-width: 800px;
+}
+
+div.image:before {
+    text-align: center;
+    margin: auto;
+    content: url('../../assets/3016239.svg');
+}
+
+.boton {
+    position: relative;
+    top: 610px;
+    background-color: #000000;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    border-radius: 400px;
+}

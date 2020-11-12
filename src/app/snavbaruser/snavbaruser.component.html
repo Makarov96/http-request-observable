@@ -1,0 +1,36 @@
+<mat-sidenav-container class="mat-sidenav-two">
+
+    <mat-sidenav #drawer fixedInViewport="true" [mode]="push" [opened]="true">
+        <mat-toolbar class="mat-toolbar-two">Menu</mat-toolbar>
+        <mat-nav-list>
+            <a class="mat-list-item-two" mat-list-item (click)="cambiarVista(1)">
+                <mat-icon class="mat-icon-two">house</mat-icon>
+            </a>
+
+            <a class="mat-list-item-two" mat-list-item (click)="cambiarVista(2)">
+                <mat-icon class="mat-icon-two">view_agendat</mat-icon>
+            </a>
+
+
+            <a class="mat-list-item-two" mat-list-item (click)="Salir()">
+                <mat-icon class="mat-icon-two">reply</mat-icon>
+            </a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+</mat-sidenav-container>
+
+<ng-container *ngIf="data == 1; then thenTemplate;"></ng-container>
+<ng-template #thenTemplate>
+    <app-userperfil></app-userperfil>
+</ng-template>
+
+<ng-container *ngIf="data == 2; then thenTemplapublic;"></ng-container>
+<ng-template #thenTemplapublic>
+    <div>
+       <app-publicaciones></app-publicaciones>
+    </div>
+</ng-template>
+
+

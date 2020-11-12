@@ -1,0 +1,22 @@
+.container-fluid {
+    padding-top: 30px;
+}
+
+.container {
+    background-color: #37474f;
+    color: white;
+    padding: 5%;
+}
+
+.mat-card {
+    -webkit-box-shadow: 7px 7px 12px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 7px 12px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 7px 12px -2px rgba(0, 0, 0, 0.75);
+    margin-block-end: 34%;
+    margin-top: 25%;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
